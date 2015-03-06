@@ -26,9 +26,8 @@ script:
   # install dependencies for tests e.g - pip install nose
   - mkdir tmp_for_test
   - cd tmp_for_test
-  - python $TRAVIS_BUILD_DIR/test/test_psutil.py
-  - python $TRAVIS_BUILD_DIR/test/test_memory_leaks.py
-  # Run the tests
+  - python $TRAVIS_BUILD_DIR/psutil/test/test_psutil.py
+  - python $TRAVIS_BUILD_DIR/psutil/test/test_memory_leaks.py
   - cd ..
 before_deploy: cd psutil/dist
 deploy:
